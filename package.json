@@ -1,0 +1,20 @@
+{
+  "name": "speedcontrol-tiltify",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speedcontrol/speedcontrol-tiltify.git"
+  },
+  "author": "zoton2",
+  "dependencies": {
+    "needle": "^2.2.4"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/speedcontrol/speedcontrol-tiltify/issues"
+  },
+  "homepage": "https://github.com/speedcontrol/speedcontrol-tiltify#readme",
+  "nodecg": {
+    "compatibleRange": "^1.0.0"
+  }
+}
