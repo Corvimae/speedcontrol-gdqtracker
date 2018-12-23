@@ -18,7 +18,7 @@ if (nodecg.bundleConfig && nodecg.bundleConfig.enable) {
 		return;
 	
 	nodecg.log.info('Tiltify integration is enabled.');
-	var donationTotal = nodecg.Replicant('tiltifyDonationTotal', {persistent:false, defaultValue:0});
+	var donationTotal = nodecg.Replicant('donationTotal', {persistent:false, defaultValue:0});
 	requestOptions.headers['Authorization'] = 'Bearer '+nodecg.bundleConfig.token;
 	
 	// Do the initial request, which also checks if the key is valid.

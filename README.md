@@ -5,11 +5,11 @@ This bundle is a helper bundle that gets the donation total from campaigns on [T
 ### Confg
 
 ```
-"tiltify": {
+{
 	"enable": true,
 	"token": "API_ACCESS_TOKEN",
 	"campaign": "CAMPAIGN_ID"
 }
 ```
 
-Once enabled and an API access token and campaign ID are specified from Tiltify (you can get a token by registering an application on the Tiltify dashboard, the campaign ID is harder to find; look in your browser's inpector in the Network tab), the donation total for your campaign will be stored and frequently updated in the `tiltifyDonationTotal` replicant of this bundle.
+Once enabled and an API access token and campaign ID are specified from Tiltify (you can get a token by registering an application on the Tiltify dashboard, the campaign ID is harder to find; look in your browser's inpector in the Network tab), the donation total for your campaign will be stored and frequently updated in the `donationTotal` replicant of this bundle.
