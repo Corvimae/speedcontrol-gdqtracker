@@ -2,7 +2,8 @@
 
 This bundle is a helper bundle that gets the donation total from campaigns on [Tiltify](https://tiltify.com/). It was originally code for [nodecg-speedcontrol](https://github.com/speedcontrol/nodecg-speedcontrol) and is intended to work alongside it, but does not depend on it so could be used for other purposes. Currently undocumented and is subject to change.
 
-### Confg
+
+### Configuration
 
 ```
 {
