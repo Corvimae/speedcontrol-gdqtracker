@@ -1,19 +1,19 @@
 {
-  "name": "speedcontrol-tiltify",
+  "name": "speedcontrol-gdqtracker",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/speedcontrol/speedcontrol-tiltify.git"
+    "url": "git+https://github.com/corvimae/speedcontrol-tiltify.git"
   },
-  "author": "zoton2",
+  "author": "Corvimae",
   "dependencies": {
     "needle": "^2.2.4"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/speedcontrol/speedcontrol-tiltify/issues"
+    "url": "https://github.com/corvimae/speedcontrol-tiltify/issues"
   },
-  "homepage": "https://github.com/speedcontrol/speedcontrol-tiltify#readme",
+  "homepage": "https://github.com/corvimae/speedcontrol-tiltify#readme",
   "nodecg": {
     "compatibleRange": "^1.0.0"
   }

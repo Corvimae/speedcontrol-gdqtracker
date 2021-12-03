@@ -3,7 +3,7 @@
 	"type": "object",
 	"properties": {
 		"enable": {"type": "boolean", "default": false},
-		"token": {"type": "string", "default": "API_ACCESS_TOKEN"},
-		"campaign": {"type": "string", "default": "CAMPAIGN_ID"}
+		"eventUrl": {"type": "string", "default": "EVENT_URL"},
+		"pollRate": {"type": "number", "default": 15000}
 	}
 }

@@ -1,6 +1,6 @@
-# speedcontrol-tiltify
+# speedcontrol-gdqtracker
 
-This bundle is a helper bundle that gets the donation total from campaigns on [Tiltify](https://tiltify.com/). It was originally code for [nodecg-speedcontrol](https://github.com/speedcontrol/nodecg-speedcontrol) and is intended to work alongside it, but does not depend on it so could be used for other purposes. Currently undocumented and is subject to change.
+This bundle is a helper bundle that gets the donation total from instances of the [GDQ Donation Tracker](https://github.com/GamesDoneQuick/donation-tracker). 
 
 
 ### Configuration
@@ -8,9 +8,11 @@ This bundle is a helper bundle that gets the donation total from campaigns on [T
 ```
 {
 	"enable": true,
-	"token": "API_ACCESS_TOKEN",
-	"campaign": "CAMPAIGN_ID"
+	"eventUrl": "EVENT_URL",
+	"pollRate": 30000
 }
 ```
 
-Once enabled and an API access token and campaign ID are specified from Tiltify (you can get a token by registering an application on the Tiltify dashboard, the campaign ID is harder to find; look in your browser's inpector in the Network tab), the donation total for your campaign will be stored and frequently updated in the `donationTotal` replicant of this bundle.
+The event URL should have the format `https://[domain]/tracker/event/[slug]` (without the brackets, of course).
+
+Poll rate is in milliseconds. By default, it is 15 seconds.
