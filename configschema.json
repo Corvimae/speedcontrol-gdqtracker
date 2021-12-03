@@ -1,9 +1,9 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"type": "object",
-	"properties": {
-		"enable": {"type": "boolean", "default": false},
-		"eventUrl": {"type": "string", "default": "EVENT_URL"},
-		"pollRate": {"type": "number", "default": 15000}
-	}
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "enable": {"type": "boolean", "default": false},
+    "eventUrl": {"type": "string", "default": "EVENT_URL"},
+    "pollRate": {"type": "number", "default": 15000}
+  }
 }

@@ -7,9 +7,9 @@ This bundle is a helper bundle that gets the donation total from instances of th
 
 ```
 {
-	"enable": true,
-	"eventUrl": "EVENT_URL",
-	"pollRate": 30000
+  "enable": true,
+  "eventUrl": "EVENT_URL",
+  "pollRate": 30000
 }
 ```
 
