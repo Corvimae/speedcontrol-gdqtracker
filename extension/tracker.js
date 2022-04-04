@@ -21,9 +21,14 @@ if (nodecg.bundleConfig && nodecg.bundleConfig.enable) {
     defaultValue: 0
   });
 
+  const donationTarget = nodecg.Replicant('donationTarget', { 
+    persistent: false,
+    defaultValue: 0
+  });
+
   const isFetching = { current: false };
 
-  function updateDonationTotal() {
+  function updateDonationStats() {
     if (isFetching.current) return;
 
     isFetching.current = true;
@@ -47,9 +52,10 @@ if (nodecg.bundleConfig && nodecg.bundleConfig.enable) {
           if (donationTotal.value !== data.agg.amount) {
             donationTotal.value = data.agg.amount;
           }
+
+          donationTarget.value = data.agg.target;
         } catch (e) {
           nodecg.log.error('Donation total parse error', e);
-
         }
 
         isFetching.current = false;
@@ -62,7 +68,7 @@ if (nodecg.bundleConfig && nodecg.bundleConfig.enable) {
     });
   }
 
-  setInterval(updateDonationTotal, pollRate);
+  setInterval(updateDonationStats, pollRate);
 
-  updateDonationTotal();
+  updateDonationStats();
 }
